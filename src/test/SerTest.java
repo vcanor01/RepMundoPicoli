@@ -1,10 +1,13 @@
-package modelo5Observer;
+package test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 
+import modelo.ser.Comportamiento;
+import modelo.ser.Edades;
+import modelo.ser.Ser;
 import utiles.Coordenada;
 
 
