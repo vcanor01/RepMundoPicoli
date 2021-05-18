@@ -1,4 +1,4 @@
-package modelo5Observer;
+package ensayos;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;
@@ -7,13 +7,16 @@ import java.util.LinkedList;
 import java.util.Observable;
 import java.util.Observer;
 
+import modelo.ser.Adulto;
+import modelo.ser.Ser;
+
 public class EstadoEnsayo {
 	public ArrayList<Ser> seres = new ArrayList<>();
 	public ArrayList<Ser> menores = new ArrayList<>();
 	public ArrayList<Ser> adultos = new ArrayList<>();
 	public ArrayList<Ser> ancianos = new ArrayList<>();
 	public ArrayDeque<Ser> parados = new ArrayDeque<>();
-	public LinkedList<Ser>trabajadores= new LinkedList<>();
+	public LinkedList<Ser> trabajadores= new LinkedList<>();
 	private long ahorros=0;
 	
 
@@ -66,7 +69,10 @@ public class EstadoEnsayo {
 			Ser ser = (Ser) iterator.next();
 			ser.envejecer();
 		}
+		
+		
 	}
+	
 	public long getAhorros() {
 		return ahorros;
 	}
